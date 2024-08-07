@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
+import {FormsModule} from "@angular/forms";
 
 @Component({
   selector: 'app-register-modal',
-  templateUrl: './register-modal.component.html',
   standalone: true,
+  imports: [
+    FormsModule
+  ],
+  templateUrl: './register-modal.component.html',
   styleUrl: './register-modal.component.css',
 })
 export class RegisterModalComponent {}
